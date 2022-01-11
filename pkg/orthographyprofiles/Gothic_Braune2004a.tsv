@@ -1,5 +1,5 @@
 Grapheme	IPA	Notes
-a	a	may also represent aː, manual correction necessary
+a	a	
 á	a	
 à	a	
 ā	a	
@@ -7,25 +7,29 @@ i	ɪ
 í	i	
 ì	i	
 ī	i	
-ei	iː	
-e	eː	
-ē	eː	
-o	oː	
-ō	oː	
-u	ʊ	may also represent uː, manual correction necessary
-ū	uː	
-ai	ɛː	may also represent ɛ if before r, h or hw, manual correction necessary
-aí	ɛː	
-aì	ɛː	
-ái	ɛː	
-au	ɔː	may also represent ɔ if before r, h or hw, manual correction necessary
-aú	ɔː	
-áu	ɔː	
-aū	ɔː	
+ï	i	
+ei	i	
+e	e	
+ē	e	
+o	o	
+ō	o	
+u	u	
+ū	u	
+ai	ɛ	
+aí	ɛ	
+aì	ɛ	
+ái	ɛ	
+au	ɔ	
+aú	ɔ	
+áu	ɔ	
+aū	ɔ	
 iu	i u	
 w	w	
+ww	wː	
 j	j	
+jj	jː	
 y	j	
+yy	jː	
 l	l	
 ll	lː	
 r	r	
@@ -37,18 +41,23 @@ nn	nː
 p	p	
 pp	pː	
 f	ɸ	
+ff	ɸː	
 b	b	
 bb	bː	
 k	k	
 x	χ	
+xx	χː	
 q	kʷ	
+qq	kːʷ	
 h	h	
-hw	hʷ	
+hh	hː	
+ƕ	ʍ	
+ƕƕ	ʍː	
 g	g	
-gg	n g	
-ggw gː w
-gk	n k	
-gq	n kʷ	
+gg	ŋ g	
+ggw	gː w	ggw may also represent ŋ w, manual correction necessary
+gk	ŋ k	
+gq	ŋ kʷ	
 t	t	
 tt	tː	
 þ	θ	
@@ -58,1594 +67,1568 @@ dd	dː
 s	s	
 ss	sː	
 z	z	
+zz	zː	
 ^	NULL	
 $	NULL	
 -	+	
-wls	wl̥s	Braune2004 p. 47. (https://github.com/orthograpy/orthograpy-profiles/issues/1) generated with https://digling.org/calc/profiler/ with this rule: [1 w j y l r m n p f b k x q h g t þ d s z][2 l m n r][3 s $] > [1 w j y l r m n p f b k x q h g t þ d s z][2 l̥ m̥ n̥ r̥][3 s $][\t]
-wl$	wl̥$	
-wms	wm̥s	
-wm$	wm̥$	
-wns	wn̥s	
-wn$	wn̥$	
-wrs	wr̥s	
-wr$	wr̥$	
-jls	jl̥s	
-jl$	jl̥$	
-jms	jm̥s	
-jm$	jm̥$	
-jns	jn̥s	
-jn$	jn̥$	
-jrs	jr̥s	
-jr$	jr̥$	
-yls	yl̥s	
-yl$	yl̥$	
-yms	ym̥s	
-ym$	ym̥$	
-yns	yn̥s	
-yn$	yn̥$	
-yrs	yr̥s	
-yr$	yr̥$	
-lls	ll̥s	
-ll$	ll̥$	
-lms	lm̥s	
-lm$	lm̥$	
-lns	ln̥s	
-ln$	ln̥$	
-lrs	lr̥s	
-lr$	lr̥$	
-rls	rl̥s	
-rl$	rl̥$	
-rms	rm̥s	
-rm$	rm̥$	
-rns	rn̥s	
-rn$	rn̥$	
-rrs	rr̥s	
-rr$	rr̥$	
-mls	ml̥s	
-ml$	ml̥$	
-mms	mm̥s	
-mm$	mm̥$	
-mns	mn̥s	
-mn$	mn̥$	
-mrs	mr̥s	
-mr$	mr̥$	
-nls	nl̥s	
-nl$	nl̥$	
-nms	nm̥s	
-nm$	nm̥$	
-nns	nn̥s	
-nn$	nn̥$	
-nrs	nr̥s	
-nr$	nr̥$	
-pls	pl̥s	
-pl$	pl̥$	
-pms	pm̥s	
-pm$	pm̥$	
-pns	pn̥s	
-pn$	pn̥$	
-prs	pr̥s	
-pr$	pr̥$	
-fls	fl̥s	
-fl$	fl̥$	
-fms	fm̥s	
-fm$	fm̥$	
-fns	fn̥s	
-fn$	fn̥$	
-frs	fr̥s	
-fr$	fr̥$	
-bls	bl̥s	
-bl$	bl̥$	
-bms	bm̥s	
-bm$	bm̥$	
-bns	bn̥s	
-bn$	bn̥$	
-brs	br̥s	
-br$	br̥$	
-kls	kl̥s	
-kl$	kl̥$	
-kms	km̥s	
-km$	km̥$	
-kns	kn̥s	
-kn$	kn̥$	
-krs	kr̥s	
-kr$	kr̥$	
-xls	xl̥s	
-xl$	xl̥$	
-xms	xm̥s	
-xm$	xm̥$	
-xns	xn̥s	
-xn$	xn̥$	
-xrs	xr̥s	
-xr$	xr̥$	
-qls	ql̥s	
-ql$	ql̥$	
-qms	qm̥s	
-qm$	qm̥$	
-qns	qn̥s	
-qn$	qn̥$	
-qrs	qr̥s	
-qr$	qr̥$	
-hls	hl̥s	
-hl$	hl̥$	
-hms	hm̥s	
-hm$	hm̥$	
-hns	hn̥s	
-hn$	hn̥$	
-hrs	hr̥s	
-hr$	hr̥$	
-gls	gl̥s	
-gl$	gl̥$	
-gms	gm̥s	
-gm$	gm̥$	
-gns	gn̥s	
-gn$	gn̥$	
-grs	gr̥s	
-gr$	gr̥$	
-tls	tl̥s	
-tl$	tl̥$	
-tms	tm̥s	
-tm$	tm̥$	
-tns	tn̥s	
-tn$	tn̥$	
-trs	tr̥s	
-tr$	tr̥$	
-þls	þl̥s	
-þl$	þl̥$	
-þms	þm̥s	
-þm$	þm̥$	
-þns	þn̥s	
-þn$	þn̥$	
-þrs	þr̥s	
-þr$	þr̥$	
-dls	dl̥s	
-dl$	dl̥$	
-dms	dm̥s	
-dm$	dm̥$	
-dns	dn̥s	
-dn$	dn̥$	
-drs	dr̥s	
-dr$	dr̥$	
-sls	sl̥s	
-sl$	sl̥$	
-sms	sm̥s	
-sm$	sm̥$	
-sns	sn̥s	
-sn$	sn̥$	
-srs	sr̥s	
-sr$	sr̥$	
-zls	zl̥s	
-zl$	zl̥$	
-zms	zm̥s	
-zm$	zm̥$	
-zns	zn̥s	
-zn$	zn̥$	
-zrs	zr̥s	
-zr$	zr̥$	
-aba	aβa	Braune2004 p.63 (https://github.com/orthograpy/orthograpy-profiles/issues/1) generated with https://digling.org/calc/profiler/ with this rule: [1 a á à ā i í ì ī e ē o ō u ū][2 b d g][3 a á à ā i í ì ī e ē o ō u ū w j y l r m n p f b k x q h g t þ d s z] > [1 a á à ā i í ì ī e ē o ō u ū][2 β ð ɣ][3 a á à ā i í ì ī e ē o ō u ū w j y l r m n p f b k x q h g t þ d s z]
-abá	aβá	
-abà	aβà	
-abā	aβā	
-abi	aβi	
-abí	aβí	
-abì	aβì	
-abī	aβī	
-abe	aβe	
-abē	aβē	
-abo	aβo	
-abō	aβō	
-abu	aβu	
-abū	aβū	
-abw	aβw	
-abj	aβj	
-aby	aβy	
-abl	aβl	
-abr	aβr	
-abm	aβm	
-abn	aβn	
-abp	aβp	
-abf	aβf	
-abb	aβb	
-abk	aβk	
-abx	aβx	
-abq	aβq	
-abh	aβh	
-abg	aβg	
-abt	aβt	
-abþ	aβþ	
-abd	aβd	
-abs	aβs	
-abz	aβz	
-ada	aða	
-adá	aðá	
-adà	aðà	
-adā	aðā	
-adi	aði	
-adí	aðí	
-adì	aðì	
-adī	aðī	
-ade	aðe	
-adē	aðē	
-ado	aðo	
-adō	aðō	
-adu	aðu	
-adū	aðū	
-adw	aðw	
-adj	aðj	
-ady	aðy	
-adl	aðl	
-adr	aðr	
-adm	aðm	
-adn	aðn	
-adp	aðp	
-adf	aðf	
-adb	aðb	
-adk	aðk	
-adx	aðx	
-adq	aðq	
-adh	aðh	
-adg	aðg	
-adt	aðt	
-adþ	aðþ	
-add	aðd	
-ads	aðs	
-adz	aðz	
-aga	aɣa	
-agá	aɣá	
-agà	aɣà	
-agā	aɣā	
-agi	aɣi	
-agí	aɣí	
-agì	aɣì	
-agī	aɣī	
-age	aɣe	
-agē	aɣē	
-ago	aɣo	
-agō	aɣō	
-agu	aɣu	
-agū	aɣū	
-agw	aɣw	
-agj	aɣj	
-agy	aɣy	
-agl	aɣl	
-agr	aɣr	
-agm	aɣm	
-agn	aɣn	
-agp	aɣp	
-agf	aɣf	
-agb	aɣb	
-agk	aɣk	
-agx	aɣx	
-agq	aɣq	
-agh	aɣh	
-agg	aɣg	
-agt	aɣt	
-agþ	aɣþ	
-agd	aɣd	
-ags	aɣs	
-agz	aɣz	
-ába	áβa	
-ábá	áβá	
-ábà	áβà	
-ábā	áβā	
-ábi	áβi	
-ábí	áβí	
-ábì	áβì	
-ábī	áβī	
-ábe	áβe	
-ábē	áβē	
-ábo	áβo	
-ábō	áβō	
-ábu	áβu	
-ábū	áβū	
-ábw	áβw	
-ábj	áβj	
-áby	áβy	
-ábl	áβl	
-ábr	áβr	
-ábm	áβm	
-ábn	áβn	
-ábp	áβp	
-ábf	áβf	
-ább	áβb	
-ábk	áβk	
-ábx	áβx	
-ábq	áβq	
-ábh	áβh	
-ábg	áβg	
-ábt	áβt	
-ábþ	áβþ	
-ábd	áβd	
-ábs	áβs	
-ábz	áβz	
-áda	áða	
-ádá	áðá	
-ádà	áðà	
-ádā	áðā	
-ádi	áði	
-ádí	áðí	
-ádì	áðì	
-ádī	áðī	
-áde	áðe	
-ádē	áðē	
-ádo	áðo	
-ádō	áðō	
-ádu	áðu	
-ádū	áðū	
-ádw	áðw	
-ádj	áðj	
-ády	áðy	
-ádl	áðl	
-ádr	áðr	
-ádm	áðm	
-ádn	áðn	
-ádp	áðp	
-ádf	áðf	
-ádb	áðb	
-ádk	áðk	
-ádx	áðx	
-ádq	áðq	
-ádh	áðh	
-ádg	áðg	
-ádt	áðt	
-ádþ	áðþ	
-ádd	áðd	
-áds	áðs	
-ádz	áðz	
-ága	áɣa	
-ágá	áɣá	
-ágà	áɣà	
-ágā	áɣā	
-ági	áɣi	
-ágí	áɣí	
-ágì	áɣì	
-ágī	áɣī	
-áge	áɣe	
-ágē	áɣē	
-ágo	áɣo	
-ágō	áɣō	
-águ	áɣu	
-ágū	áɣū	
-ágw	áɣw	
-ágj	áɣj	
-ágy	áɣy	
-ágl	áɣl	
-ágr	áɣr	
-ágm	áɣm	
-ágn	áɣn	
-ágp	áɣp	
-ágf	áɣf	
-ágb	áɣb	
-ágk	áɣk	
-ágx	áɣx	
-ágq	áɣq	
-ágh	áɣh	
-ágg	áɣg	
-ágt	áɣt	
-ágþ	áɣþ	
-ágd	áɣd	
-ágs	áɣs	
-ágz	áɣz	
-àba	àβa	
-àbá	àβá	
-àbà	àβà	
-àbā	àβā	
-àbi	àβi	
-àbí	àβí	
-àbì	àβì	
-àbī	àβī	
-àbe	àβe	
-àbē	àβē	
-àbo	àβo	
-àbō	àβō	
-àbu	àβu	
-àbū	àβū	
-àbw	àβw	
-àbj	àβj	
-àby	àβy	
-àbl	àβl	
-àbr	àβr	
-àbm	àβm	
-àbn	àβn	
-àbp	àβp	
-àbf	àβf	
-àbb	àβb	
-àbk	àβk	
-àbx	àβx	
-àbq	àβq	
-àbh	àβh	
-àbg	àβg	
-àbt	àβt	
-àbþ	àβþ	
-àbd	àβd	
-àbs	àβs	
-àbz	àβz	
-àda	àða	
-àdá	àðá	
-àdà	àðà	
-àdā	àðā	
-àdi	àði	
-àdí	àðí	
-àdì	àðì	
-àdī	àðī	
-àde	àðe	
-àdē	àðē	
-àdo	àðo	
-àdō	àðō	
-àdu	àðu	
-àdū	àðū	
-àdw	àðw	
-àdj	àðj	
-àdy	àðy	
-àdl	àðl	
-àdr	àðr	
-àdm	àðm	
-àdn	àðn	
-àdp	àðp	
-àdf	àðf	
-àdb	àðb	
-àdk	àðk	
-àdx	àðx	
-àdq	àðq	
-àdh	àðh	
-àdg	àðg	
-àdt	àðt	
-àdþ	àðþ	
-àdd	àðd	
-àds	àðs	
-àdz	àðz	
-àga	àɣa	
-àgá	àɣá	
-àgà	àɣà	
-àgā	àɣā	
-àgi	àɣi	
-àgí	àɣí	
-àgì	àɣì	
-àgī	àɣī	
-àge	àɣe	
-àgē	àɣē	
-àgo	àɣo	
-àgō	àɣō	
-àgu	àɣu	
-àgū	àɣū	
-àgw	àɣw	
-àgj	àɣj	
-àgy	àɣy	
-àgl	àɣl	
-àgr	àɣr	
-àgm	àɣm	
-àgn	àɣn	
-àgp	àɣp	
-àgf	àɣf	
-àgb	àɣb	
-àgk	àɣk	
-àgx	àɣx	
-àgq	àɣq	
-àgh	àɣh	
-àgg	àɣg	
-àgt	àɣt	
-àgþ	àɣþ	
-àgd	àɣd	
-àgs	àɣs	
-àgz	àɣz	
-āba	āβa	
-ābá	āβá	
-ābà	āβà	
-ābā	āβā	
-ābi	āβi	
-ābí	āβí	
-ābì	āβì	
-ābī	āβī	
-ābe	āβe	
-ābē	āβē	
-ābo	āβo	
-ābō	āβō	
-ābu	āβu	
-ābū	āβū	
-ābw	āβw	
-ābj	āβj	
-āby	āβy	
-ābl	āβl	
-ābr	āβr	
-ābm	āβm	
-ābn	āβn	
-ābp	āβp	
-ābf	āβf	
-ābb	āβb	
-ābk	āβk	
-ābx	āβx	
-ābq	āβq	
-ābh	āβh	
-ābg	āβg	
-ābt	āβt	
-ābþ	āβþ	
-ābd	āβd	
-ābs	āβs	
-ābz	āβz	
-āda	āða	
-ādá	āðá	
-ādà	āðà	
-ādā	āðā	
-ādi	āði	
-ādí	āðí	
-ādì	āðì	
-ādī	āðī	
-āde	āðe	
-ādē	āðē	
-ādo	āðo	
-ādō	āðō	
-ādu	āðu	
-ādū	āðū	
-ādw	āðw	
-ādj	āðj	
-ādy	āðy	
-ādl	āðl	
-ādr	āðr	
-ādm	āðm	
-ādn	āðn	
-ādp	āðp	
-ādf	āðf	
-ādb	āðb	
-ādk	āðk	
-ādx	āðx	
-ādq	āðq	
-ādh	āðh	
-ādg	āðg	
-ādt	āðt	
-ādþ	āðþ	
-ādd	āðd	
-āds	āðs	
-ādz	āðz	
-āga	āɣa	
-āgá	āɣá	
-āgà	āɣà	
-āgā	āɣā	
-āgi	āɣi	
-āgí	āɣí	
-āgì	āɣì	
-āgī	āɣī	
-āge	āɣe	
-āgē	āɣē	
-āgo	āɣo	
-āgō	āɣō	
-āgu	āɣu	
-āgū	āɣū	
-āgw	āɣw	
-āgj	āɣj	
-āgy	āɣy	
-āgl	āɣl	
-āgr	āɣr	
-āgm	āɣm	
-āgn	āɣn	
-āgp	āɣp	
-āgf	āɣf	
-āgb	āɣb	
-āgk	āɣk	
-āgx	āɣx	
-āgq	āɣq	
-āgh	āɣh	
-āgg	āɣg	
-āgt	āɣt	
-āgþ	āɣþ	
-āgd	āɣd	
-āgs	āɣs	
-āgz	āɣz	
-iba	iβa	
-ibá	iβá	
-ibà	iβà	
-ibā	iβā	
-ibi	iβi	
-ibí	iβí	
-ibì	iβì	
-ibī	iβī	
-ibe	iβe	
-ibē	iβē	
-ibo	iβo	
-ibō	iβō	
-ibu	iβu	
-ibū	iβū	
-ibw	iβw	
-ibj	iβj	
-iby	iβy	
-ibl	iβl	
-ibr	iβr	
-ibm	iβm	
-ibn	iβn	
-ibp	iβp	
-ibf	iβf	
-ibb	iβb	
-ibk	iβk	
-ibx	iβx	
-ibq	iβq	
-ibh	iβh	
-ibg	iβg	
-ibt	iβt	
-ibþ	iβþ	
-ibd	iβd	
-ibs	iβs	
-ibz	iβz	
-ida	iða	
-idá	iðá	
-idà	iðà	
-idā	iðā	
-idi	iði	
-idí	iðí	
-idì	iðì	
-idī	iðī	
-ide	iðe	
-idē	iðē	
-ido	iðo	
-idō	iðō	
-idu	iðu	
-idū	iðū	
-idw	iðw	
-idj	iðj	
-idy	iðy	
-idl	iðl	
-idr	iðr	
-idm	iðm	
-idn	iðn	
-idp	iðp	
-idf	iðf	
-idb	iðb	
-idk	iðk	
-idx	iðx	
-idq	iðq	
-idh	iðh	
-idg	iðg	
-idt	iðt	
-idþ	iðþ	
-idd	iðd	
-ids	iðs	
-idz	iðz	
-iga	iɣa	
-igá	iɣá	
-igà	iɣà	
-igā	iɣā	
-igi	iɣi	
-igí	iɣí	
-igì	iɣì	
-igī	iɣī	
-ige	iɣe	
-igē	iɣē	
-igo	iɣo	
-igō	iɣō	
-igu	iɣu	
-igū	iɣū	
-igw	iɣw	
-igj	iɣj	
-igy	iɣy	
-igl	iɣl	
-igr	iɣr	
-igm	iɣm	
-ign	iɣn	
-igp	iɣp	
-igf	iɣf	
-igb	iɣb	
-igk	iɣk	
-igx	iɣx	
-igq	iɣq	
-igh	iɣh	
-igg	iɣg	
-igt	iɣt	
-igþ	iɣþ	
-igd	iɣd	
-igs	iɣs	
-igz	iɣz	
-íba	íβa	
-íbá	íβá	
-íbà	íβà	
-íbā	íβā	
-íbi	íβi	
-íbí	íβí	
-íbì	íβì	
-íbī	íβī	
-íbe	íβe	
-íbē	íβē	
-íbo	íβo	
-íbō	íβō	
-íbu	íβu	
-íbū	íβū	
-íbw	íβw	
-íbj	íβj	
-íby	íβy	
-íbl	íβl	
-íbr	íβr	
-íbm	íβm	
-íbn	íβn	
-íbp	íβp	
-íbf	íβf	
-íbb	íβb	
-íbk	íβk	
-íbx	íβx	
-íbq	íβq	
-íbh	íβh	
-íbg	íβg	
-íbt	íβt	
-íbþ	íβþ	
-íbd	íβd	
-íbs	íβs	
-íbz	íβz	
-ída	íða	
-ídá	íðá	
-ídà	íðà	
-ídā	íðā	
-ídi	íði	
-ídí	íðí	
-ídì	íðì	
-ídī	íðī	
-íde	íðe	
-ídē	íðē	
-ído	íðo	
-ídō	íðō	
-ídu	íðu	
-ídū	íðū	
-ídw	íðw	
-ídj	íðj	
-ídy	íðy	
-ídl	íðl	
-ídr	íðr	
-ídm	íðm	
-ídn	íðn	
-ídp	íðp	
-ídf	íðf	
-ídb	íðb	
-ídk	íðk	
-ídx	íðx	
-ídq	íðq	
-ídh	íðh	
-ídg	íðg	
-ídt	íðt	
-ídþ	íðþ	
-ídd	íðd	
-íds	íðs	
-ídz	íðz	
-íga	íɣa	
-ígá	íɣá	
-ígà	íɣà	
-ígā	íɣā	
-ígi	íɣi	
-ígí	íɣí	
-ígì	íɣì	
-ígī	íɣī	
-íge	íɣe	
-ígē	íɣē	
-ígo	íɣo	
-ígō	íɣō	
-ígu	íɣu	
-ígū	íɣū	
-ígw	íɣw	
-ígj	íɣj	
-így	íɣy	
-ígl	íɣl	
-ígr	íɣr	
-ígm	íɣm	
-ígn	íɣn	
-ígp	íɣp	
-ígf	íɣf	
-ígb	íɣb	
-ígk	íɣk	
-ígx	íɣx	
-ígq	íɣq	
-ígh	íɣh	
-ígg	íɣg	
-ígt	íɣt	
-ígþ	íɣþ	
-ígd	íɣd	
-ígs	íɣs	
-ígz	íɣz	
-ìba	ìβa	
-ìbá	ìβá	
-ìbà	ìβà	
-ìbā	ìβā	
-ìbi	ìβi	
-ìbí	ìβí	
-ìbì	ìβì	
-ìbī	ìβī	
-ìbe	ìβe	
-ìbē	ìβē	
-ìbo	ìβo	
-ìbō	ìβō	
-ìbu	ìβu	
-ìbū	ìβū	
-ìbw	ìβw	
-ìbj	ìβj	
-ìby	ìβy	
-ìbl	ìβl	
-ìbr	ìβr	
-ìbm	ìβm	
-ìbn	ìβn	
-ìbp	ìβp	
-ìbf	ìβf	
-ìbb	ìβb	
-ìbk	ìβk	
-ìbx	ìβx	
-ìbq	ìβq	
-ìbh	ìβh	
-ìbg	ìβg	
-ìbt	ìβt	
-ìbþ	ìβþ	
-ìbd	ìβd	
-ìbs	ìβs	
-ìbz	ìβz	
-ìda	ìða	
-ìdá	ìðá	
-ìdà	ìðà	
-ìdā	ìðā	
-ìdi	ìði	
-ìdí	ìðí	
-ìdì	ìðì	
-ìdī	ìðī	
-ìde	ìðe	
-ìdē	ìðē	
-ìdo	ìðo	
-ìdō	ìðō	
-ìdu	ìðu	
-ìdū	ìðū	
-ìdw	ìðw	
-ìdj	ìðj	
-ìdy	ìðy	
-ìdl	ìðl	
-ìdr	ìðr	
-ìdm	ìðm	
-ìdn	ìðn	
-ìdp	ìðp	
-ìdf	ìðf	
-ìdb	ìðb	
-ìdk	ìðk	
-ìdx	ìðx	
-ìdq	ìðq	
-ìdh	ìðh	
-ìdg	ìðg	
-ìdt	ìðt	
-ìdþ	ìðþ	
-ìdd	ìðd	
-ìds	ìðs	
-ìdz	ìðz	
-ìga	ìɣa	
-ìgá	ìɣá	
-ìgà	ìɣà	
-ìgā	ìɣā	
-ìgi	ìɣi	
-ìgí	ìɣí	
-ìgì	ìɣì	
-ìgī	ìɣī	
-ìge	ìɣe	
-ìgē	ìɣē	
-ìgo	ìɣo	
-ìgō	ìɣō	
-ìgu	ìɣu	
-ìgū	ìɣū	
-ìgw	ìɣw	
-ìgj	ìɣj	
-ìgy	ìɣy	
-ìgl	ìɣl	
-ìgr	ìɣr	
-ìgm	ìɣm	
-ìgn	ìɣn	
-ìgp	ìɣp	
-ìgf	ìɣf	
-ìgb	ìɣb	
-ìgk	ìɣk	
-ìgx	ìɣx	
-ìgq	ìɣq	
-ìgh	ìɣh	
-ìgg	ìɣg	
-ìgt	ìɣt	
-ìgþ	ìɣþ	
-ìgd	ìɣd	
-ìgs	ìɣs	
-ìgz	ìɣz	
-ība	īβa	
-ībá	īβá	
-ībà	īβà	
-ībā	īβā	
-ībi	īβi	
-ībí	īβí	
-ībì	īβì	
-ībī	īβī	
-ībe	īβe	
-ībē	īβē	
-ībo	īβo	
-ībō	īβō	
-ību	īβu	
-ībū	īβū	
-ībw	īβw	
-ībj	īβj	
-īby	īβy	
-ībl	īβl	
-ībr	īβr	
-ībm	īβm	
-ībn	īβn	
-ībp	īβp	
-ībf	īβf	
-ībb	īβb	
-ībk	īβk	
-ībx	īβx	
-ībq	īβq	
-ībh	īβh	
-ībg	īβg	
-ībt	īβt	
-ībþ	īβþ	
-ībd	īβd	
-ībs	īβs	
-ībz	īβz	
-īda	īða	
-īdá	īðá	
-īdà	īðà	
-īdā	īðā	
-īdi	īði	
-īdí	īðí	
-īdì	īðì	
-īdī	īðī	
-īde	īðe	
-īdē	īðē	
-īdo	īðo	
-īdō	īðō	
-īdu	īðu	
-īdū	īðū	
-īdw	īðw	
-īdj	īðj	
-īdy	īðy	
-īdl	īðl	
-īdr	īðr	
-īdm	īðm	
-īdn	īðn	
-īdp	īðp	
-īdf	īðf	
-īdb	īðb	
-īdk	īðk	
-īdx	īðx	
-īdq	īðq	
-īdh	īðh	
-īdg	īðg	
-īdt	īðt	
-īdþ	īðþ	
-īdd	īðd	
-īds	īðs	
-īdz	īðz	
-īga	īɣa	
-īgá	īɣá	
-īgà	īɣà	
-īgā	īɣā	
-īgi	īɣi	
-īgí	īɣí	
-īgì	īɣì	
-īgī	īɣī	
-īge	īɣe	
-īgē	īɣē	
-īgo	īɣo	
-īgō	īɣō	
-īgu	īɣu	
-īgū	īɣū	
-īgw	īɣw	
-īgj	īɣj	
-īgy	īɣy	
-īgl	īɣl	
-īgr	īɣr	
-īgm	īɣm	
-īgn	īɣn	
-īgp	īɣp	
-īgf	īɣf	
-īgb	īɣb	
-īgk	īɣk	
-īgx	īɣx	
-īgq	īɣq	
-īgh	īɣh	
-īgg	īɣg	
-īgt	īɣt	
-īgþ	īɣþ	
-īgd	īɣd	
-īgs	īɣs	
-īgz	īɣz	
-eba	eβa	
-ebá	eβá	
-ebà	eβà	
-ebā	eβā	
-ebi	eβi	
-ebí	eβí	
-ebì	eβì	
-ebī	eβī	
-ebe	eβe	
-ebē	eβē	
-ebo	eβo	
-ebō	eβō	
-ebu	eβu	
-ebū	eβū	
-ebw	eβw	
-ebj	eβj	
-eby	eβy	
-ebl	eβl	
-ebr	eβr	
-ebm	eβm	
-ebn	eβn	
-ebp	eβp	
-ebf	eβf	
-ebb	eβb	
-ebk	eβk	
-ebx	eβx	
-ebq	eβq	
-ebh	eβh	
-ebg	eβg	
-ebt	eβt	
-ebþ	eβþ	
-ebd	eβd	
-ebs	eβs	
-ebz	eβz	
-eda	eða	
-edá	eðá	
-edà	eðà	
-edā	eðā	
-edi	eði	
-edí	eðí	
-edì	eðì	
-edī	eðī	
-ede	eðe	
-edē	eðē	
-edo	eðo	
-edō	eðō	
-edu	eðu	
-edū	eðū	
-edw	eðw	
-edj	eðj	
-edy	eðy	
-edl	eðl	
-edr	eðr	
-edm	eðm	
-edn	eðn	
-edp	eðp	
-edf	eðf	
-edb	eðb	
-edk	eðk	
-edx	eðx	
-edq	eðq	
-edh	eðh	
-edg	eðg	
-edt	eðt	
-edþ	eðþ	
-edd	eðd	
-eds	eðs	
-edz	eðz	
-ega	eɣa	
-egá	eɣá	
-egà	eɣà	
-egā	eɣā	
-egi	eɣi	
-egí	eɣí	
-egì	eɣì	
-egī	eɣī	
-ege	eɣe	
-egē	eɣē	
-ego	eɣo	
-egō	eɣō	
-egu	eɣu	
-egū	eɣū	
-egw	eɣw	
-egj	eɣj	
-egy	eɣy	
-egl	eɣl	
-egr	eɣr	
-egm	eɣm	
-egn	eɣn	
-egp	eɣp	
-egf	eɣf	
-egb	eɣb	
-egk	eɣk	
-egx	eɣx	
-egq	eɣq	
-egh	eɣh	
-egg	eɣg	
-egt	eɣt	
-egþ	eɣþ	
-egd	eɣd	
-egs	eɣs	
-egz	eɣz	
-ēba	ēβa	
-ēbá	ēβá	
-ēbà	ēβà	
-ēbā	ēβā	
-ēbi	ēβi	
-ēbí	ēβí	
-ēbì	ēβì	
-ēbī	ēβī	
-ēbe	ēβe	
-ēbē	ēβē	
-ēbo	ēβo	
-ēbō	ēβō	
-ēbu	ēβu	
-ēbū	ēβū	
-ēbw	ēβw	
-ēbj	ēβj	
-ēby	ēβy	
-ēbl	ēβl	
-ēbr	ēβr	
-ēbm	ēβm	
-ēbn	ēβn	
-ēbp	ēβp	
-ēbf	ēβf	
-ēbb	ēβb	
-ēbk	ēβk	
-ēbx	ēβx	
-ēbq	ēβq	
-ēbh	ēβh	
-ēbg	ēβg	
-ēbt	ēβt	
-ēbþ	ēβþ	
-ēbd	ēβd	
-ēbs	ēβs	
-ēbz	ēβz	
-ēda	ēða	
-ēdá	ēðá	
-ēdà	ēðà	
-ēdā	ēðā	
-ēdi	ēði	
-ēdí	ēðí	
-ēdì	ēðì	
-ēdī	ēðī	
-ēde	ēðe	
-ēdē	ēðē	
-ēdo	ēðo	
-ēdō	ēðō	
-ēdu	ēðu	
-ēdū	ēðū	
-ēdw	ēðw	
-ēdj	ēðj	
-ēdy	ēðy	
-ēdl	ēðl	
-ēdr	ēðr	
-ēdm	ēðm	
-ēdn	ēðn	
-ēdp	ēðp	
-ēdf	ēðf	
-ēdb	ēðb	
-ēdk	ēðk	
-ēdx	ēðx	
-ēdq	ēðq	
-ēdh	ēðh	
-ēdg	ēðg	
-ēdt	ēðt	
-ēdþ	ēðþ	
-ēdd	ēðd	
-ēds	ēðs	
-ēdz	ēðz	
-ēga	ēɣa	
-ēgá	ēɣá	
-ēgà	ēɣà	
-ēgā	ēɣā	
-ēgi	ēɣi	
-ēgí	ēɣí	
-ēgì	ēɣì	
-ēgī	ēɣī	
-ēge	ēɣe	
-ēgē	ēɣē	
-ēgo	ēɣo	
-ēgō	ēɣō	
-ēgu	ēɣu	
-ēgū	ēɣū	
-ēgw	ēɣw	
-ēgj	ēɣj	
-ēgy	ēɣy	
-ēgl	ēɣl	
-ēgr	ēɣr	
-ēgm	ēɣm	
-ēgn	ēɣn	
-ēgp	ēɣp	
-ēgf	ēɣf	
-ēgb	ēɣb	
-ēgk	ēɣk	
-ēgx	ēɣx	
-ēgq	ēɣq	
-ēgh	ēɣh	
-ēgg	ēɣg	
-ēgt	ēɣt	
-ēgþ	ēɣþ	
-ēgd	ēɣd	
-ēgs	ēɣs	
-ēgz	ēɣz	
-oba	oβa	
-obá	oβá	
-obà	oβà	
-obā	oβā	
-obi	oβi	
-obí	oβí	
-obì	oβì	
-obī	oβī	
-obe	oβe	
-obē	oβē	
-obo	oβo	
-obō	oβō	
-obu	oβu	
-obū	oβū	
-obw	oβw	
-obj	oβj	
-oby	oβy	
-obl	oβl	
-obr	oβr	
-obm	oβm	
-obn	oβn	
-obp	oβp	
-obf	oβf	
-obb	oβb	
-obk	oβk	
-obx	oβx	
-obq	oβq	
-obh	oβh	
-obg	oβg	
-obt	oβt	
-obþ	oβþ	
-obd	oβd	
-obs	oβs	
-obz	oβz	
-oda	oða	
-odá	oðá	
-odà	oðà	
-odā	oðā	
-odi	oði	
-odí	oðí	
-odì	oðì	
-odī	oðī	
-ode	oðe	
-odē	oðē	
-odo	oðo	
-odō	oðō	
-odu	oðu	
-odū	oðū	
-odw	oðw	
-odj	oðj	
-ody	oðy	
-odl	oðl	
-odr	oðr	
-odm	oðm	
-odn	oðn	
-odp	oðp	
-odf	oðf	
-odb	oðb	
-odk	oðk	
-odx	oðx	
-odq	oðq	
-odh	oðh	
-odg	oðg	
-odt	oðt	
-odþ	oðþ	
-odd	oðd	
-ods	oðs	
-odz	oðz	
-oga	oɣa	
-ogá	oɣá	
-ogà	oɣà	
-ogā	oɣā	
-ogi	oɣi	
-ogí	oɣí	
-ogì	oɣì	
-ogī	oɣī	
-oge	oɣe	
-ogē	oɣē	
-ogo	oɣo	
-ogō	oɣō	
-ogu	oɣu	
-ogū	oɣū	
-ogw	oɣw	
-ogj	oɣj	
-ogy	oɣy	
-ogl	oɣl	
-ogr	oɣr	
-ogm	oɣm	
-ogn	oɣn	
-ogp	oɣp	
-ogf	oɣf	
-ogb	oɣb	
-ogk	oɣk	
-ogx	oɣx	
-ogq	oɣq	
-ogh	oɣh	
-ogg	oɣg	
-ogt	oɣt	
-ogþ	oɣþ	
-ogd	oɣd	
-ogs	oɣs	
-ogz	oɣz	
-ōba	ōβa	
-ōbá	ōβá	
-ōbà	ōβà	
-ōbā	ōβā	
-ōbi	ōβi	
-ōbí	ōβí	
-ōbì	ōβì	
-ōbī	ōβī	
-ōbe	ōβe	
-ōbē	ōβē	
-ōbo	ōβo	
-ōbō	ōβō	
-ōbu	ōβu	
-ōbū	ōβū	
-ōbw	ōβw	
-ōbj	ōβj	
-ōby	ōβy	
-ōbl	ōβl	
-ōbr	ōβr	
-ōbm	ōβm	
-ōbn	ōβn	
-ōbp	ōβp	
-ōbf	ōβf	
-ōbb	ōβb	
-ōbk	ōβk	
-ōbx	ōβx	
-ōbq	ōβq	
-ōbh	ōβh	
-ōbg	ōβg	
-ōbt	ōβt	
-ōbþ	ōβþ	
-ōbd	ōβd	
-ōbs	ōβs	
-ōbz	ōβz	
-ōda	ōða	
-ōdá	ōðá	
-ōdà	ōðà	
-ōdā	ōðā	
-ōdi	ōði	
-ōdí	ōðí	
-ōdì	ōðì	
-ōdī	ōðī	
-ōde	ōðe	
-ōdē	ōðē	
-ōdo	ōðo	
-ōdō	ōðō	
-ōdu	ōðu	
-ōdū	ōðū	
-ōdw	ōðw	
-ōdj	ōðj	
-ōdy	ōðy	
-ōdl	ōðl	
-ōdr	ōðr	
-ōdm	ōðm	
-ōdn	ōðn	
-ōdp	ōðp	
-ōdf	ōðf	
-ōdb	ōðb	
-ōdk	ōðk	
-ōdx	ōðx	
-ōdq	ōðq	
-ōdh	ōðh	
-ōdg	ōðg	
-ōdt	ōðt	
-ōdþ	ōðþ	
-ōdd	ōðd	
-ōds	ōðs	
-ōdz	ōðz	
-ōga	ōɣa	
-ōgá	ōɣá	
-ōgà	ōɣà	
-ōgā	ōɣā	
-ōgi	ōɣi	
-ōgí	ōɣí	
-ōgì	ōɣì	
-ōgī	ōɣī	
-ōge	ōɣe	
-ōgē	ōɣē	
-ōgo	ōɣo	
-ōgō	ōɣō	
-ōgu	ōɣu	
-ōgū	ōɣū	
-ōgw	ōɣw	
-ōgj	ōɣj	
-ōgy	ōɣy	
-ōgl	ōɣl	
-ōgr	ōɣr	
-ōgm	ōɣm	
-ōgn	ōɣn	
-ōgp	ōɣp	
-ōgf	ōɣf	
-ōgb	ōɣb	
-ōgk	ōɣk	
-ōgx	ōɣx	
-ōgq	ōɣq	
-ōgh	ōɣh	
-ōgg	ōɣg	
-ōgt	ōɣt	
-ōgþ	ōɣþ	
-ōgd	ōɣd	
-ōgs	ōɣs	
-ōgz	ōɣz	
-uba	uβa	
-ubá	uβá	
-ubà	uβà	
-ubā	uβā	
-ubi	uβi	
-ubí	uβí	
-ubì	uβì	
-ubī	uβī	
-ube	uβe	
-ubē	uβē	
-ubo	uβo	
-ubō	uβō	
-ubu	uβu	
-ubū	uβū	
-ubw	uβw	
-ubj	uβj	
-uby	uβy	
-ubl	uβl	
-ubr	uβr	
-ubm	uβm	
-ubn	uβn	
-ubp	uβp	
-ubf	uβf	
-ubb	uβb	
-ubk	uβk	
-ubx	uβx	
-ubq	uβq	
-ubh	uβh	
-ubg	uβg	
-ubt	uβt	
-ubþ	uβþ	
-ubd	uβd	
-ubs	uβs	
-ubz	uβz	
-uda	uða	
-udá	uðá	
-udà	uðà	
-udā	uðā	
-udi	uði	
-udí	uðí	
-udì	uðì	
-udī	uðī	
-ude	uðe	
-udē	uðē	
-udo	uðo	
-udō	uðō	
-udu	uðu	
-udū	uðū	
-udw	uðw	
-udj	uðj	
-udy	uðy	
-udl	uðl	
-udr	uðr	
-udm	uðm	
-udn	uðn	
-udp	uðp	
-udf	uðf	
-udb	uðb	
-udk	uðk	
-udx	uðx	
-udq	uðq	
-udh	uðh	
-udg	uðg	
-udt	uðt	
-udþ	uðþ	
-udd	uðd	
-uds	uðs	
-udz	uðz	
-uga	uɣa	
-ugá	uɣá	
-ugà	uɣà	
-ugā	uɣā	
-ugi	uɣi	
-ugí	uɣí	
-ugì	uɣì	
-ugī	uɣī	
-uge	uɣe	
-ugē	uɣē	
-ugo	uɣo	
-ugō	uɣō	
-ugu	uɣu	
-ugū	uɣū	
-ugw	uɣw	
-ugj	uɣj	
-ugy	uɣy	
-ugl	uɣl	
-ugr	uɣr	
-ugm	uɣm	
-ugn	uɣn	
-ugp	uɣp	
-ugf	uɣf	
-ugb	uɣb	
-ugk	uɣk	
-ugx	uɣx	
-ugq	uɣq	
-ugh	uɣh	
-ugg	uɣg	
-ugt	uɣt	
-ugþ	uɣþ	
-ugd	uɣd	
-ugs	uɣs	
-ugz	uɣz	
-ūba	ūβa	
-ūbá	ūβá	
-ūbà	ūβà	
-ūbā	ūβā	
-ūbi	ūβi	
-ūbí	ūβí	
-ūbì	ūβì	
-ūbī	ūβī	
-ūbe	ūβe	
-ūbē	ūβē	
-ūbo	ūβo	
-ūbō	ūβō	
-ūbu	ūβu	
-ūbū	ūβū	
-ūbw	ūβw	
-ūbj	ūβj	
-ūby	ūβy	
-ūbl	ūβl	
-ūbr	ūβr	
-ūbm	ūβm	
-ūbn	ūβn	
-ūbp	ūβp	
-ūbf	ūβf	
-ūbb	ūβb	
-ūbk	ūβk	
-ūbx	ūβx	
-ūbq	ūβq	
-ūbh	ūβh	
-ūbg	ūβg	
-ūbt	ūβt	
-ūbþ	ūβþ	
-ūbd	ūβd	
-ūbs	ūβs	
-ūbz	ūβz	
-ūda	ūða	
-ūdá	ūðá	
-ūdà	ūðà	
-ūdā	ūðā	
-ūdi	ūði	
-ūdí	ūðí	
-ūdì	ūðì	
-ūdī	ūðī	
-ūde	ūðe	
-ūdē	ūðē	
-ūdo	ūðo	
-ūdō	ūðō	
-ūdu	ūðu	
-ūdū	ūðū	
-ūdw	ūðw	
-ūdj	ūðj	
-ūdy	ūðy	
-ūdl	ūðl	
-ūdr	ūðr	
-ūdm	ūðm	
-ūdn	ūðn	
-ūdp	ūðp	
-ūdf	ūðf	
-ūdb	ūðb	
-ūdk	ūðk	
-ūdx	ūðx	
-ūdq	ūðq	
-ūdh	ūðh	
-ūdg	ūðg	
-ūdt	ūðt	
-ūdþ	ūðþ	
-ūdd	ūðd	
-ūds	ūðs	
-ūdz	ūðz	
-ūga	ūɣa	
-ūgá	ūɣá	
-ūgà	ūɣà	
-ūgā	ūɣā	
-ūgi	ūɣi	
-ūgí	ūɣí	
-ūgì	ūɣì	
-ūgī	ūɣī	
-ūge	ūɣe	
-ūgē	ūɣē	
-ūgo	ūɣo	
-ūgō	ūɣō	
-ūgu	ūɣu	
-ūgū	ūɣū	
-ūgw	ūɣw	
-ūgj	ūɣj	
-ūgy	ūɣy	
-ūgl	ūɣl	
-ūgr	ūɣr	
-ūgm	ūɣm	
-ūgn	ūɣn	
-ūgp	ūɣp	
-ūgf	ūɣf	
-ūgb	ūɣb	
-ūgk	ūɣk	
-ūgx	ūɣx	
-ūgq	ūɣq	
-ūgh	ūɣh	
-ūgg	ūɣg	
-ūgt	ūɣt	
-ūgþ	ūɣþ	
-ūgd	ūɣd	
-ūgs	ūɣs	
-ūgz	ūɣz	
+_	 	
+wls	w l̥ s	Braune2004 p. 47. (https://github.com/orthograpy/orthograpy-profiles/issues/1) generated with https://digling.org/calc/profiler/ with this rule: [1 w j y l r m n p f b k x q h g t þ d s z][2 l m n r][3 s $] > [1 w j y l r m n p f b k x q h g t þ d s z][2 l̥ m̥ n̥ r̥][3 s $]
+wl$	w l̥	
+wms	w m̥ s	
+wm$	w m̥	
+wns	w n̥ s	
+wn$	w n̥	
+wrs	w r̥ s	
+wr$	w r̥	
+jls	j l̥ s	
+jl$	j l̥	
+jms	j m̥ s	
+jm$	j m̥	
+jns	j n̥ s	
+jn$	j n̥	
+jrs	j r̥ s	
+jr$	j r̥	
+yls	y l̥ s	
+yl$	y l̥	
+yms	y m̥ s	
+ym$	y m̥	
+yns	y n̥ s	
+yn$	y n̥	
+yrs	y r̥ s	
+yr$	y r̥	
+lls	l l̥ s	
+ll$	l l̥	
+lms	l m̥ s	
+lm$	l m̥	
+lns	l n̥ s	
+ln$	l n̥	
+lrs	l r̥ s	
+lr$	l r̥	
+rls	r l̥ s	
+rl$	r l̥	
+rms	r m̥ s	
+rm$	r m̥	
+rns	r n̥ s	
+rn$	r n̥	
+rrs	r r̥ s	
+rr$	r r̥	
+mls	m l̥ s	
+ml$	m l̥	
+mms	m m̥ s	
+mm$	m m̥	
+mns	m n̥ s	
+mn$	m n̥	
+mrs	m r̥ s	
+mr$	m r̥	
+nls	n l̥ s	
+nl$	n l̥	
+nms	n m̥ s	
+nm$	n m̥	
+nns	n n̥ s	
+nn$	n n̥	
+nrs	n r̥ s	
+nr$	n r̥	
+pls	p l̥ s	
+pl$	p l̥	
+pms	p m̥ s	
+pm$	p m̥	
+pns	p n̥ s	
+pn$	p n̥	
+prs	p r̥ s	
+pr$	p r̥	
+fls	f l̥ s	
+fl$	f l̥	
+fms	f m̥ s	
+fm$	f m̥	
+fns	f n̥ s	
+fn$	f n̥	
+frs	f r̥ s	
+fr$	f r̥	
+bls	b l̥ s	
+bl$	b l̥	
+bms	b m̥ s	
+bm$	b m̥	
+bns	b n̥ s	
+bn$	b n̥	
+brs	b r̥ s	
+br$	b r̥	
+kls	k l̥ s	
+kl$	k l̥	
+kms	k m̥ s	
+km$	k m̥	
+kns	k n̥ s	
+kn$	k n̥	
+krs	k r̥ s	
+kr$	k r̥	
+xls	x l̥ s	
+xl$	x l̥	
+xms	x m̥ s	
+xm$	x m̥	
+xns	x n̥ s	
+xn$	x n̥	
+xrs	x r̥ s	
+xr$	x r̥	
+qls	q l̥ s	
+ql$	q l̥	
+qms	q m̥ s	
+qm$	q m̥	
+qns	q n̥ s	
+qn$	q n̥	
+qrs	q r̥ s	
+qr$	q r̥	
+hls	h l̥ s	
+hl$	h l̥	
+hms	h m̥ s	
+hm$	h m̥	
+hns	h n̥ s	
+hn$	h n̥	
+hrs	h r̥ s	
+hr$	h r̥	
+gls	g l̥ s	
+gl$	g l̥	
+gms	g m̥ s	
+gm$	g m̥	
+gns	g n̥ s	
+gn$	g n̥	
+grs	g r̥ s	
+gr$	g r̥	
+tls	t l̥ s	
+tl$	t l̥	
+tms	t m̥ s	
+tm$	t m̥	
+tns	t n̥ s	
+tn$	t n̥	
+trs	t r̥ s	
+tr$	t r̥	
+þls	þ l̥ s	
+þl$	þ l̥	
+þms	þ m̥ s	
+þm$	þ m̥	
+þns	þ n̥ s	
+þn$	þ n̥	
+þrs	þ r̥ s	
+þr$	þ r̥	
+dls	d l̥ s	
+dl$	d l̥	
+dms	d m̥ s	
+dm$	d m̥	
+dns	d n̥ s	
+dn$	d n̥	
+drs	d r̥ s	
+dr$	d r̥	
+sls	s l̥ s	
+sl$	s l̥	
+sms	s m̥ s	
+sm$	s m̥	
+sns	s n̥ s	
+sn$	s n̥	
+srs	s r̥ s	
+sr$	s r̥	
+zls	z l̥ s	
+zl$	z l̥	
+zms	z m̥ s	
+zm$	z m̥	
+zns	z n̥ s	
+zn$	z n̥	
+zrs	z r̥ s	
+zr$	z r̥	
+aba	a β a	Braune2004 p.63 (https://github.com/orthograpy/orthograpy-profiles/issues/1) generated with https://digling.org/calc/profiler/ with this rule: [1 a á à ā i í ì ī e ē o ō u ū][2 b d g][3 a á à ā i í ì ī e ē o ō u ū w j y l r m n p f b k x q h g t þ d s z] > [1 a á à ā i í ì ī e ē o ō u ū][2 β ð ɣ][3 a á à ā i í ì ī e ē o ō u ū w j y l r m n p f b k x q h g t þ d s z]
+abá	a β á	
+abà	a β à	
+abā	a β ā	
+abi	a β i	
+abí	a β í	
+abì	a β ì	
+abī	a β ī	
+abe	a β e	
+abē	a β ē	
+abo	a β o	
+abō	a β ō	
+abu	a β u	
+abū	a β ū	
+abw	a β w	
+abj	a β j	
+aby	a β y	
+abl	a β l	
+abr	a β r	
+abm	a β m	
+abn	a β n	
+abp	a β p	
+abf	a β f	
+abk	a β k	
+abx	a β x	
+abq	a β q	
+abh	a β h	
+abg	a β g	
+abt	a β t	
+abþ	a β þ	
+abd	a β d	
+abs	a β s	
+abz	a β z	
+ada	a ð a	
+adá	a ð á	
+adà	a ð à	
+adā	a ð ā	
+adi	a ð i	
+adí	a ð í	
+adì	a ð ì	
+adī	a ð ī	
+ade	a ð e	
+adē	a ð ē	
+ado	a ð o	
+adō	a ð ō	
+adu	a ð u	
+adū	a ð ū	
+adw	a ð w	
+adj	a ð j	
+ady	a ð y	
+adl	a ð l	
+adr	a ð r	
+adm	a ð m	
+adn	a ð n	
+adp	a ð p	
+adf	a ð f	
+adb	a ð b	
+adk	a ð k	
+adx	a ð x	
+adq	a ð q	
+adh	a ð h	
+adg	a ð g	
+adt	a ð t	
+adþ	a ð þ	
+ads	a ð s	
+adz	a ð z	
+aga	a ɣ a	
+agá	a ɣ á	
+agà	a ɣ à	
+agā	a ɣ ā	
+agi	a ɣ i	
+agí	a ɣ í	
+agì	a ɣ ì	
+agī	a ɣ ī	
+age	a ɣ e	
+agē	a ɣ ē	
+ago	a ɣ o	
+agō	a ɣ ō	
+agu	a ɣ u	
+agū	a ɣ ū	
+agw	a ɣ w	
+agj	a ɣ j	
+agy	a ɣ y	
+agl	a ɣ l	
+agr	a ɣ r	
+agm	a ɣ m	
+agn	a ɣ n	
+agp	a ɣ p	
+agf	a ɣ f	
+agb	a ɣ b	
+agk	a ɣ k	
+agx	a ɣ x	
+agq	a ɣ q	
+agh	a ɣ h	
+agg	a ɣ g	
+agt	a ɣ t	
+agþ	a ɣ þ	
+agd	a ɣ d	
+ags	a ɣ s	
+agz	a ɣ z	
+ába	á β a	
+ábá	á β á	
+ábà	á β à	
+ábā	á β ā	
+ábi	á β i	
+ábí	á β í	
+ábì	á β ì	
+ábī	á β ī	
+ábe	á β e	
+ábē	á β ē	
+ábo	á β o	
+ábō	á β ō	
+ábu	á β u	
+ábū	á β ū	
+ábw	á β w	
+ábj	á β j	
+áby	á β y	
+ábl	á β l	
+ábr	á β r	
+ábm	á β m	
+ábn	á β n	
+ábp	á β p	
+ábf	á β f	
+ábk	á β k	
+ábx	á β x	
+ábq	á β q	
+ábh	á β h	
+ábg	á β g	
+ábt	á β t	
+ábþ	á β þ	
+ábd	á β d	
+ábs	á β s	
+ábz	á β z	
+áda	á ð a	
+ádá	á ð á	
+ádà	á ð à	
+ádā	á ð ā	
+ádi	á ð i	
+ádí	á ð í	
+ádì	á ð ì	
+ádī	á ð ī	
+áde	á ð e	
+ádē	á ð ē	
+ádo	á ð o	
+ádō	á ð ō	
+ádu	á ð u	
+ádū	á ð ū	
+ádw	á ð w	
+ádj	á ð j	
+ády	á ð y	
+ádl	á ð l	
+ádr	á ð r	
+ádm	á ð m	
+ádn	á ð n	
+ádp	á ð p	
+ádf	á ð f	
+ádb	á ð b	
+ádk	á ð k	
+ádx	á ð x	
+ádq	á ð q	
+ádh	á ð h	
+ádg	á ð g	
+ádt	á ð t	
+ádþ	á ð þ	
+áds	á ð s	
+ádz	á ð z	
+ága	á ɣ a	
+ágá	á ɣ á	
+ágà	á ɣ à	
+ágā	á ɣ ā	
+ági	á ɣ i	
+ágí	á ɣ í	
+ágì	á ɣ ì	
+ágī	á ɣ ī	
+áge	á ɣ e	
+ágē	á ɣ ē	
+ágo	á ɣ o	
+ágō	á ɣ ō	
+águ	á ɣ u	
+ágū	á ɣ ū	
+ágw	á ɣ w	
+ágj	á ɣ j	
+ágy	á ɣ y	
+ágl	á ɣ l	
+ágr	á ɣ r	
+ágm	á ɣ m	
+ágn	á ɣ n	
+ágp	á ɣ p	
+ágf	á ɣ f	
+ágb	á ɣ b	
+ágk	á ɣ k	
+ágx	á ɣ x	
+ágq	á ɣ q	
+ágh	á ɣ h	
+ágg	á ɣ g	
+ágt	á ɣ t	
+ágþ	á ɣ þ	
+ágd	á ɣ d	
+ágs	á ɣ s	
+ágz	á ɣ z	
+àba	à β a	
+àbá	à β á	
+àbà	à β à	
+àbā	à β ā	
+àbi	à β i	
+àbí	à β í	
+àbì	à β ì	
+àbī	à β ī	
+àbe	à β e	
+àbē	à β ē	
+àbo	à β o	
+àbō	à β ō	
+àbu	à β u	
+àbū	à β ū	
+àbw	à β w	
+àbj	à β j	
+àby	à β y	
+àbl	à β l	
+àbr	à β r	
+àbm	à β m	
+àbn	à β n	
+àbp	à β p	
+àbf	à β f	
+àbk	à β k	
+àbx	à β x	
+àbq	à β q	
+àbh	à β h	
+àbg	à β g	
+àbt	à β t	
+àbþ	à β þ	
+àbd	à β d	
+àbs	à β s	
+àbz	à β z	
+àda	à ð a	
+àdá	à ð á	
+àdà	à ð à	
+àdā	à ð ā	
+àdi	à ð i	
+àdí	à ð í	
+àdì	à ð ì	
+àdī	à ð ī	
+àde	à ð e	
+àdē	à ð ē	
+àdo	à ð o	
+àdō	à ð ō	
+àdu	à ð u	
+àdū	à ð ū	
+àdw	à ð w	
+àdj	à ð j	
+àdy	à ð y	
+àdl	à ð l	
+àdr	à ð r	
+àdm	à ð m	
+àdn	à ð n	
+àdp	à ð p	
+àdf	à ð f	
+àdb	à ð b	
+àdk	à ð k	
+àdx	à ð x	
+àdq	à ð q	
+àdh	à ð h	
+àdg	à ð g	
+àdt	à ð t	
+àdþ	à ð þ	
+àds	à ð s	
+àdz	à ð z	
+àga	à ɣ a	
+àgá	à ɣ á	
+àgà	à ɣ à	
+àgā	à ɣ ā	
+àgi	à ɣ i	
+àgí	à ɣ í	
+àgì	à ɣ ì	
+àgī	à ɣ ī	
+àge	à ɣ e	
+àgē	à ɣ ē	
+àgo	à ɣ o	
+àgō	à ɣ ō	
+àgu	à ɣ u	
+àgū	à ɣ ū	
+àgw	à ɣ w	
+àgj	à ɣ j	
+àgy	à ɣ y	
+àgl	à ɣ l	
+àgr	à ɣ r	
+àgm	à ɣ m	
+àgn	à ɣ n	
+àgp	à ɣ p	
+àgf	à ɣ f	
+àgb	à ɣ b	
+àgk	à ɣ k	
+àgx	à ɣ x	
+àgq	à ɣ q	
+àgh	à ɣ h	
+àgg	à ɣ g	
+àgt	à ɣ t	
+àgþ	à ɣ þ	
+àgd	à ɣ d	
+àgs	à ɣ s	
+àgz	à ɣ z	
+āba	ā β a	
+ābá	ā β á	
+ābà	ā β à	
+ābā	ā β ā	
+ābi	ā β i	
+ābí	ā β í	
+ābì	ā β ì	
+ābī	ā β ī	
+ābe	ā β e	
+ābē	ā β ē	
+ābo	ā β o	
+ābō	ā β ō	
+ābu	ā β u	
+ābū	ā β ū	
+ābw	ā β w	
+ābj	ā β j	
+āby	ā β y	
+ābl	ā β l	
+ābr	ā β r	
+ābm	ā β m	
+ābn	ā β n	
+ābp	ā β p	
+ābf	ā β f	
+ābk	ā β k	
+ābx	ā β x	
+ābq	ā β q	
+ābh	ā β h	
+ābg	ā β g	
+ābt	ā β t	
+ābþ	ā β þ	
+ābd	ā β d	
+ābs	ā β s	
+ābz	ā β z	
+āda	ā ð a	
+ādá	ā ð á	
+ādà	ā ð à	
+ādā	ā ð ā	
+ādi	ā ð i	
+ādí	ā ð í	
+ādì	ā ð ì	
+ādī	ā ð ī	
+āde	ā ð e	
+ādē	ā ð ē	
+ādo	ā ð o	
+ādō	ā ð ō	
+ādu	ā ð u	
+ādū	ā ð ū	
+ādw	ā ð w	
+ādj	ā ð j	
+ādy	ā ð y	
+ādl	ā ð l	
+ādr	ā ð r	
+ādm	ā ð m	
+ādn	ā ð n	
+ādp	ā ð p	
+ādf	ā ð f	
+ādb	ā ð b	
+ādk	ā ð k	
+ādx	ā ð x	
+ādq	ā ð q	
+ādh	ā ð h	
+ādg	ā ð g	
+ādt	ā ð t	
+ādþ	ā ð þ	
+āds	ā ð s	
+ādz	ā ð z	
+āga	ā ɣ a	
+āgá	ā ɣ á	
+āgà	ā ɣ à	
+āgā	ā ɣ ā	
+āgi	ā ɣ i	
+āgí	ā ɣ í	
+āgì	ā ɣ ì	
+āgī	ā ɣ ī	
+āge	ā ɣ e	
+āgē	ā ɣ ē	
+āgo	ā ɣ o	
+āgō	ā ɣ ō	
+āgu	ā ɣ u	
+āgū	ā ɣ ū	
+āgw	ā ɣ w	
+āgj	ā ɣ j	
+āgy	ā ɣ y	
+āgl	ā ɣ l	
+āgr	ā ɣ r	
+āgm	ā ɣ m	
+āgn	ā ɣ n	
+āgp	ā ɣ p	
+āgf	ā ɣ f	
+āgb	ā ɣ b	
+āgk	ā ɣ k	
+āgx	ā ɣ x	
+āgq	ā ɣ q	
+āgh	ā ɣ h	
+āgg	ā ɣ g	
+āgt	ā ɣ t	
+āgþ	ā ɣ þ	
+āgd	ā ɣ d	
+āgs	ā ɣ s	
+āgz	ā ɣ z	
+iba	i β a	
+ibá	i β á	
+ibà	i β à	
+ibā	i β ā	
+ibi	i β i	
+ibí	i β í	
+ibì	i β ì	
+ibī	i β ī	
+ibe	i β e	
+ibē	i β ē	
+ibo	i β o	
+ibō	i β ō	
+ibu	i β u	
+ibū	i β ū	
+ibw	i β w	
+ibj	i β j	
+iby	i β y	
+ibl	i β l	
+ibr	i β r	
+ibm	i β m	
+ibn	i β n	
+ibp	i β p	
+ibf	i β f	
+ibk	i β k	
+ibx	i β x	
+ibq	i β q	
+ibh	i β h	
+ibg	i β g	
+ibt	i β t	
+ibþ	i β þ	
+ibd	i β d	
+ibs	i β s	
+ibz	i β z	
+ida	i ð a	
+idá	i ð á	
+idà	i ð à	
+idā	i ð ā	
+idi	i ð i	
+idí	i ð í	
+idì	i ð ì	
+idī	i ð ī	
+ide	i ð e	
+idē	i ð ē	
+ido	i ð o	
+idō	i ð ō	
+idu	i ð u	
+idū	i ð ū	
+idw	i ð w	
+idj	i ð j	
+idy	i ð y	
+idl	i ð l	
+idr	i ð r	
+idm	i ð m	
+idn	i ð n	
+idp	i ð p	
+idf	i ð f	
+idb	i ð b	
+idk	i ð k	
+idx	i ð x	
+idq	i ð q	
+idh	i ð h	
+idg	i ð g	
+idt	i ð t	
+idþ	i ð þ	
+ids	i ð s	
+idz	i ð z	
+iga	i ɣ a	
+igá	i ɣ á	
+igà	i ɣ à	
+igā	i ɣ ā	
+igi	i ɣ i	
+igí	i ɣ í	
+igì	i ɣ ì	
+igī	i ɣ ī	
+ige	i ɣ e	
+igē	i ɣ ē	
+igo	i ɣ o	
+igō	i ɣ ō	
+igu	i ɣ u	
+igū	i ɣ ū	
+igw	i ɣ w	
+igj	i ɣ j	
+igy	i ɣ y	
+igl	i ɣ l	
+igr	i ɣ r	
+igm	i ɣ m	
+ign	i ɣ n	
+igp	i ɣ p	
+igf	i ɣ f	
+igb	i ɣ b	
+igk	i ɣ k	
+igx	i ɣ x	
+igq	i ɣ q	
+igh	i ɣ h	
+igg	i ɣ g	
+igt	i ɣ t	
+igþ	i ɣ þ	
+igd	i ɣ d	
+igs	i ɣ s	
+igz	i ɣ z	
+íba	í β a	
+íbá	í β á	
+íbà	í β à	
+íbā	í β ā	
+íbi	í β i	
+íbí	í β í	
+íbì	í β ì	
+íbī	í β ī	
+íbe	í β e	
+íbē	í β ē	
+íbo	í β o	
+íbō	í β ō	
+íbu	í β u	
+íbū	í β ū	
+íbw	í β w	
+íbj	í β j	
+íby	í β y	
+íbl	í β l	
+íbr	í β r	
+íbm	í β m	
+íbn	í β n	
+íbp	í β p	
+íbf	í β f	
+íbk	í β k	
+íbx	í β x	
+íbq	í β q	
+íbh	í β h	
+íbg	í β g	
+íbt	í β t	
+íbþ	í β þ	
+íbd	í β d	
+íbs	í β s	
+íbz	í β z	
+ída	í ð a	
+ídá	í ð á	
+ídà	í ð à	
+ídā	í ð ā	
+ídi	í ð i	
+ídí	í ð í	
+ídì	í ð ì	
+ídī	í ð ī	
+íde	í ð e	
+ídē	í ð ē	
+ído	í ð o	
+ídō	í ð ō	
+ídu	í ð u	
+ídū	í ð ū	
+ídw	í ð w	
+ídj	í ð j	
+ídy	í ð y	
+ídl	í ð l	
+ídr	í ð r	
+ídm	í ð m	
+ídn	í ð n	
+ídp	í ð p	
+ídf	í ð f	
+ídb	í ð b	
+ídk	í ð k	
+ídx	í ð x	
+ídq	í ð q	
+ídh	í ð h	
+ídg	í ð g	
+ídt	í ð t	
+ídþ	í ð þ	
+íds	í ð s	
+ídz	í ð z	
+íga	í ɣ a	
+ígá	í ɣ á	
+ígà	í ɣ à	
+ígā	í ɣ ā	
+ígi	í ɣ i	
+ígí	í ɣ í	
+ígì	í ɣ ì	
+ígī	í ɣ ī	
+íge	í ɣ e	
+ígē	í ɣ ē	
+ígo	í ɣ o	
+ígō	í ɣ ō	
+ígu	í ɣ u	
+ígū	í ɣ ū	
+ígw	í ɣ w	
+ígj	í ɣ j	
+így	í ɣ y	
+ígl	í ɣ l	
+ígr	í ɣ r	
+ígm	í ɣ m	
+ígn	í ɣ n	
+ígp	í ɣ p	
+ígf	í ɣ f	
+ígb	í ɣ b	
+ígk	í ɣ k	
+ígx	í ɣ x	
+ígq	í ɣ q	
+ígh	í ɣ h	
+ígg	í ɣ g	
+ígt	í ɣ t	
+ígþ	í ɣ þ	
+ígd	í ɣ d	
+ígs	í ɣ s	
+ígz	í ɣ z	
+ìba	ì β a	
+ìbá	ì β á	
+ìbà	ì β à	
+ìbā	ì β ā	
+ìbi	ì β i	
+ìbí	ì β í	
+ìbì	ì β ì	
+ìbī	ì β ī	
+ìbe	ì β e	
+ìbē	ì β ē	
+ìbo	ì β o	
+ìbō	ì β ō	
+ìbu	ì β u	
+ìbū	ì β ū	
+ìbw	ì β w	
+ìbj	ì β j	
+ìby	ì β y	
+ìbl	ì β l	
+ìbr	ì β r	
+ìbm	ì β m	
+ìbn	ì β n	
+ìbp	ì β p	
+ìbf	ì β f	
+ìbk	ì β k	
+ìbx	ì β x	
+ìbq	ì β q	
+ìbh	ì β h	
+ìbg	ì β g	
+ìbt	ì β t	
+ìbþ	ì β þ	
+ìbd	ì β d	
+ìbs	ì β s	
+ìbz	ì β z	
+ìda	ì ð a	
+ìdá	ì ð á	
+ìdà	ì ð à	
+ìdā	ì ð ā	
+ìdi	ì ð i	
+ìdí	ì ð í	
+ìdì	ì ð ì	
+ìdī	ì ð ī	
+ìde	ì ð e	
+ìdē	ì ð ē	
+ìdo	ì ð o	
+ìdō	ì ð ō	
+ìdu	ì ð u	
+ìdū	ì ð ū	
+ìdw	ì ð w	
+ìdj	ì ð j	
+ìdy	ì ð y	
+ìdl	ì ð l	
+ìdr	ì ð r	
+ìdm	ì ð m	
+ìdn	ì ð n	
+ìdp	ì ð p	
+ìdf	ì ð f	
+ìdb	ì ð b	
+ìdk	ì ð k	
+ìdx	ì ð x	
+ìdq	ì ð q	
+ìdh	ì ð h	
+ìdg	ì ð g	
+ìdt	ì ð t	
+ìdþ	ì ð þ	
+ìds	ì ð s	
+ìdz	ì ð z	
+ìga	ì ɣ a	
+ìgá	ì ɣ á	
+ìgà	ì ɣ à	
+ìgā	ì ɣ ā	
+ìgi	ì ɣ i	
+ìgí	ì ɣ í	
+ìgì	ì ɣ ì	
+ìgī	ì ɣ ī	
+ìge	ì ɣ e	
+ìgē	ì ɣ ē	
+ìgo	ì ɣ o	
+ìgō	ì ɣ ō	
+ìgu	ì ɣ u	
+ìgū	ì ɣ ū	
+ìgw	ì ɣ w	
+ìgj	ì ɣ j	
+ìgy	ì ɣ y	
+ìgl	ì ɣ l	
+ìgr	ì ɣ r	
+ìgm	ì ɣ m	
+ìgn	ì ɣ n	
+ìgp	ì ɣ p	
+ìgf	ì ɣ f	
+ìgb	ì ɣ b	
+ìgk	ì ɣ k	
+ìgx	ì ɣ x	
+ìgq	ì ɣ q	
+ìgh	ì ɣ h	
+ìgg	ì ɣ g	
+ìgt	ì ɣ t	
+ìgþ	ì ɣ þ	
+ìgd	ì ɣ d	
+ìgs	ì ɣ s	
+ìgz	ì ɣ z	
+ība	ī β a	
+ībá	ī β á	
+ībà	ī β à	
+ībā	ī β ā	
+ībi	ī β i	
+ībí	ī β í	
+ībì	ī β ì	
+ībī	ī β ī	
+ībe	ī β e	
+ībē	ī β ē	
+ībo	ī β o	
+ībō	ī β ō	
+ību	ī β u	
+ībū	ī β ū	
+ībw	ī β w	
+ībj	ī β j	
+īby	ī β y	
+ībl	ī β l	
+ībr	ī β r	
+ībm	ī β m	
+ībn	ī β n	
+ībp	ī β p	
+ībf	ī β f	
+ībk	ī β k	
+ībx	ī β x	
+ībq	ī β q	
+ībh	ī β h	
+ībg	ī β g	
+ībt	ī β t	
+ībþ	ī β þ	
+ībd	ī β d	
+ībs	ī β s	
+ībz	ī β z	
+īda	ī ð a	
+īdá	ī ð á	
+īdà	ī ð à	
+īdā	ī ð ā	
+īdi	ī ð i	
+īdí	ī ð í	
+īdì	ī ð ì	
+īdī	ī ð ī	
+īde	ī ð e	
+īdē	ī ð ē	
+īdo	ī ð o	
+īdō	ī ð ō	
+īdu	ī ð u	
+īdū	ī ð ū	
+īdw	ī ð w	
+īdj	ī ð j	
+īdy	ī ð y	
+īdl	ī ð l	
+īdr	ī ð r	
+īdm	ī ð m	
+īdn	ī ð n	
+īdp	ī ð p	
+īdf	ī ð f	
+īdb	ī ð b	
+īdk	ī ð k	
+īdx	ī ð x	
+īdq	ī ð q	
+īdh	ī ð h	
+īdg	ī ð g	
+īdt	ī ð t	
+īdþ	ī ð þ	
+īds	ī ð s	
+īdz	ī ð z	
+īga	ī ɣ a	
+īgá	ī ɣ á	
+īgà	ī ɣ à	
+īgā	ī ɣ ā	
+īgi	ī ɣ i	
+īgí	ī ɣ í	
+īgì	ī ɣ ì	
+īgī	ī ɣ ī	
+īge	ī ɣ e	
+īgē	ī ɣ ē	
+īgo	ī ɣ o	
+īgō	ī ɣ ō	
+īgu	ī ɣ u	
+īgū	ī ɣ ū	
+īgw	ī ɣ w	
+īgj	ī ɣ j	
+īgy	ī ɣ y	
+īgl	ī ɣ l	
+īgr	ī ɣ r	
+īgm	ī ɣ m	
+īgn	ī ɣ n	
+īgp	ī ɣ p	
+īgf	ī ɣ f	
+īgb	ī ɣ b	
+īgk	ī ɣ k	
+īgx	ī ɣ x	
+īgq	ī ɣ q	
+īgh	ī ɣ h	
+īgg	ī ɣ g	
+īgt	ī ɣ t	
+īgþ	ī ɣ þ	
+īgd	ī ɣ d	
+īgs	ī ɣ s	
+īgz	ī ɣ z	
+eba	e β a	
+ebá	e β á	
+ebà	e β à	
+ebā	e β ā	
+ebi	e β i	
+ebí	e β í	
+ebì	e β ì	
+ebī	e β ī	
+ebe	e β e	
+ebē	e β ē	
+ebo	e β o	
+ebō	e β ō	
+ebu	e β u	
+ebū	e β ū	
+ebw	e β w	
+ebj	e β j	
+eby	e β y	
+ebl	e β l	
+ebr	e β r	
+ebm	e β m	
+ebn	e β n	
+ebp	e β p	
+ebf	e β f	
+ebk	e β k	
+ebx	e β x	
+ebq	e β q	
+ebh	e β h	
+ebg	e β g	
+ebt	e β t	
+ebþ	e β þ	
+ebd	e β d	
+ebs	e β s	
+ebz	e β z	
+eda	e ð a	
+edá	e ð á	
+edà	e ð à	
+edā	e ð ā	
+edi	e ð i	
+edí	e ð í	
+edì	e ð ì	
+edī	e ð ī	
+ede	e ð e	
+edē	e ð ē	
+edo	e ð o	
+edō	e ð ō	
+edu	e ð u	
+edū	e ð ū	
+edw	e ð w	
+edj	e ð j	
+edy	e ð y	
+edl	e ð l	
+edr	e ð r	
+edm	e ð m	
+edn	e ð n	
+edp	e ð p	
+edf	e ð f	
+edb	e ð b	
+edk	e ð k	
+edx	e ð x	
+edq	e ð q	
+edh	e ð h	
+edg	e ð g	
+edt	e ð t	
+edþ	e ð þ	
+eds	e ð s	
+edz	e ð z	
+ega	e ɣ a	
+egá	e ɣ á	
+egà	e ɣ à	
+egā	e ɣ ā	
+egi	e ɣ i	
+egí	e ɣ í	
+egì	e ɣ ì	
+egī	e ɣ ī	
+ege	e ɣ e	
+egē	e ɣ ē	
+ego	e ɣ o	
+egō	e ɣ ō	
+egu	e ɣ u	
+egū	e ɣ ū	
+egw	e ɣ w	
+egj	e ɣ j	
+egy	e ɣ y	
+egl	e ɣ l	
+egr	e ɣ r	
+egm	e ɣ m	
+egn	e ɣ n	
+egp	e ɣ p	
+egf	e ɣ f	
+egb	e ɣ b	
+egk	e ɣ k	
+egx	e ɣ x	
+egq	e ɣ q	
+egh	e ɣ h	
+egg	e ɣ g	
+egt	e ɣ t	
+egþ	e ɣ þ	
+egd	e ɣ d	
+egs	e ɣ s	
+egz	e ɣ z	
+ēba	ē β a	
+ēbá	ē β á	
+ēbà	ē β à	
+ēbā	ē β ā	
+ēbi	ē β i	
+ēbí	ē β í	
+ēbì	ē β ì	
+ēbī	ē β ī	
+ēbe	ē β e	
+ēbē	ē β ē	
+ēbo	ē β o	
+ēbō	ē β ō	
+ēbu	ē β u	
+ēbū	ē β ū	
+ēbw	ē β w	
+ēbj	ē β j	
+ēby	ē β y	
+ēbl	ē β l	
+ēbr	ē β r	
+ēbm	ē β m	
+ēbn	ē β n	
+ēbp	ē β p	
+ēbf	ē β f	
+ēbk	ē β k	
+ēbx	ē β x	
+ēbq	ē β q	
+ēbh	ē β h	
+ēbg	ē β g	
+ēbt	ē β t	
+ēbþ	ē β þ	
+ēbd	ē β d	
+ēbs	ē β s	
+ēbz	ē β z	
+ēda	ē ð a	
+ēdá	ē ð á	
+ēdà	ē ð à	
+ēdā	ē ð ā	
+ēdi	ē ð i	
+ēdí	ē ð í	
+ēdì	ē ð ì	
+ēdī	ē ð ī	
+ēde	ē ð e	
+ēdē	ē ð ē	
+ēdo	ē ð o	
+ēdō	ē ð ō	
+ēdu	ē ð u	
+ēdū	ē ð ū	
+ēdw	ē ð w	
+ēdj	ē ð j	
+ēdy	ē ð y	
+ēdl	ē ð l	
+ēdr	ē ð r	
+ēdm	ē ð m	
+ēdn	ē ð n	
+ēdp	ē ð p	
+ēdf	ē ð f	
+ēdb	ē ð b	
+ēdk	ē ð k	
+ēdx	ē ð x	
+ēdq	ē ð q	
+ēdh	ē ð h	
+ēdg	ē ð g	
+ēdt	ē ð t	
+ēdþ	ē ð þ	
+ēds	ē ð s	
+ēdz	ē ð z	
+ēga	ē ɣ a	
+ēgá	ē ɣ á	
+ēgà	ē ɣ à	
+ēgā	ē ɣ ā	
+ēgi	ē ɣ i	
+ēgí	ē ɣ í	
+ēgì	ē ɣ ì	
+ēgī	ē ɣ ī	
+ēge	ē ɣ e	
+ēgē	ē ɣ ē	
+ēgo	ē ɣ o	
+ēgō	ē ɣ ō	
+ēgu	ē ɣ u	
+ēgū	ē ɣ ū	
+ēgw	ē ɣ w	
+ēgj	ē ɣ j	
+ēgy	ē ɣ y	
+ēgl	ē ɣ l	
+ēgr	ē ɣ r	
+ēgm	ē ɣ m	
+ēgn	ē ɣ n	
+ēgp	ē ɣ p	
+ēgf	ē ɣ f	
+ēgb	ē ɣ b	
+ēgk	ē ɣ k	
+ēgx	ē ɣ x	
+ēgq	ē ɣ q	
+ēgh	ē ɣ h	
+ēgg	ē ɣ g	
+ēgt	ē ɣ t	
+ēgþ	ē ɣ þ	
+ēgd	ē ɣ d	
+ēgs	ē ɣ s	
+ēgz	ē ɣ z	
+oba	o β a	
+obá	o β á	
+obà	o β à	
+obā	o β ā	
+obi	o β i	
+obí	o β í	
+obì	o β ì	
+obī	o β ī	
+obe	o β e	
+obē	o β ē	
+obo	o β o	
+obō	o β ō	
+obu	o β u	
+obū	o β ū	
+obw	o β w	
+obj	o β j	
+oby	o β y	
+obl	o β l	
+obr	o β r	
+obm	o β m	
+obn	o β n	
+obp	o β p	
+obf	o β f	
+obk	o β k	
+obx	o β x	
+obq	o β q	
+obh	o β h	
+obg	o β g	
+obt	o β t	
+obþ	o β þ	
+obd	o β d	
+obs	o β s	
+obz	o β z	
+oda	o ð a	
+odá	o ð á	
+odà	o ð à	
+odā	o ð ā	
+odi	o ð i	
+odí	o ð í	
+odì	o ð ì	
+odī	o ð ī	
+ode	o ð e	
+odē	o ð ē	
+odo	o ð o	
+odō	o ð ō	
+odu	o ð u	
+odū	o ð ū	
+odw	o ð w	
+odj	o ð j	
+ody	o ð y	
+odl	o ð l	
+odr	o ð r	
+odm	o ð m	
+odn	o ð n	
+odp	o ð p	
+odf	o ð f	
+odb	o ð b	
+odk	o ð k	
+odx	o ð x	
+odq	o ð q	
+odh	o ð h	
+odg	o ð g	
+odt	o ð t	
+odþ	o ð þ	
+ods	o ð s	
+odz	o ð z	
+oga	o ɣ a	
+ogá	o ɣ á	
+ogà	o ɣ à	
+ogā	o ɣ ā	
+ogi	o ɣ i	
+ogí	o ɣ í	
+ogì	o ɣ ì	
+ogī	o ɣ ī	
+oge	o ɣ e	
+ogē	o ɣ ē	
+ogo	o ɣ o	
+ogō	o ɣ ō	
+ogu	o ɣ u	
+ogū	o ɣ ū	
+ogw	o ɣ w	
+ogj	o ɣ j	
+ogy	o ɣ y	
+ogl	o ɣ l	
+ogr	o ɣ r	
+ogm	o ɣ m	
+ogn	o ɣ n	
+ogp	o ɣ p	
+ogf	o ɣ f	
+ogb	o ɣ b	
+ogk	o ɣ k	
+ogx	o ɣ x	
+ogq	o ɣ q	
+ogh	o ɣ h	
+ogg	o ɣ g	
+ogt	o ɣ t	
+ogþ	o ɣ þ	
+ogd	o ɣ d	
+ogs	o ɣ s	
+ogz	o ɣ z	
+ōba	ō β a	
+ōbá	ō β á	
+ōbà	ō β à	
+ōbā	ō β ā	
+ōbi	ō β i	
+ōbí	ō β í	
+ōbì	ō β ì	
+ōbī	ō β ī	
+ōbe	ō β e	
+ōbē	ō β ē	
+ōbo	ō β o	
+ōbō	ō β ō	
+ōbu	ō β u	
+ōbū	ō β ū	
+ōbw	ō β w	
+ōbj	ō β j	
+ōby	ō β y	
+ōbl	ō β l	
+ōbr	ō β r	
+ōbm	ō β m	
+ōbn	ō β n	
+ōbp	ō β p	
+ōbf	ō β f	
+ōbk	ō β k	
+ōbx	ō β x	
+ōbq	ō β q	
+ōbh	ō β h	
+ōbg	ō β g	
+ōbt	ō β t	
+ōbþ	ō β þ	
+ōbd	ō β d	
+ōbs	ō β s	
+ōbz	ō β z	
+ōda	ō ð a	
+ōdá	ō ð á	
+ōdà	ō ð à	
+ōdā	ō ð ā	
+ōdi	ō ð i	
+ōdí	ō ð í	
+ōdì	ō ð ì	
+ōdī	ō ð ī	
+ōde	ō ð e	
+ōdē	ō ð ē	
+ōdo	ō ð o	
+ōdō	ō ð ō	
+ōdu	ō ð u	
+ōdū	ō ð ū	
+ōdw	ō ð w	
+ōdj	ō ð j	
+ōdy	ō ð y	
+ōdl	ō ð l	
+ōdr	ō ð r	
+ōdm	ō ð m	
+ōdn	ō ð n	
+ōdp	ō ð p	
+ōdf	ō ð f	
+ōdb	ō ð b	
+ōdk	ō ð k	
+ōdx	ō ð x	
+ōdq	ō ð q	
+ōdh	ō ð h	
+ōdg	ō ð g	
+ōdt	ō ð t	
+ōdþ	ō ð þ	
+ōds	ō ð s	
+ōdz	ō ð z	
+ōga	ō ɣ a	
+ōgá	ō ɣ á	
+ōgà	ō ɣ à	
+ōgā	ō ɣ ā	
+ōgi	ō ɣ i	
+ōgí	ō ɣ í	
+ōgì	ō ɣ ì	
+ōgī	ō ɣ ī	
+ōge	ō ɣ e	
+ōgē	ō ɣ ē	
+ōgo	ō ɣ o	
+ōgō	ō ɣ ō	
+ōgu	ō ɣ u	
+ōgū	ō ɣ ū	
+ōgw	ō ɣ w	
+ōgj	ō ɣ j	
+ōgy	ō ɣ y	
+ōgl	ō ɣ l	
+ōgr	ō ɣ r	
+ōgm	ō ɣ m	
+ōgn	ō ɣ n	
+ōgp	ō ɣ p	
+ōgf	ō ɣ f	
+ōgb	ō ɣ b	
+ōgk	ō ɣ k	
+ōgx	ō ɣ x	
+ōgq	ō ɣ q	
+ōgh	ō ɣ h	
+ōgg	ō ɣ g	
+ōgt	ō ɣ t	
+ōgþ	ō ɣ þ	
+ōgd	ō ɣ d	
+ōgs	ō ɣ s	
+ōgz	ō ɣ z	
+uba	u β a	
+ubá	u β á	
+ubà	u β à	
+ubā	u β ā	
+ubi	u β i	
+ubí	u β í	
+ubì	u β ì	
+ubī	u β ī	
+ube	u β e	
+ubē	u β ē	
+ubo	u β o	
+ubō	u β ō	
+ubu	u β u	
+ubū	u β ū	
+ubw	u β w	
+ubj	u β j	
+uby	u β y	
+ubl	u β l	
+ubr	u β r	
+ubm	u β m	
+ubn	u β n	
+ubp	u β p	
+ubf	u β f	
+ubk	u β k	
+ubx	u β x	
+ubq	u β q	
+ubh	u β h	
+ubg	u β g	
+ubt	u β t	
+ubþ	u β þ	
+ubd	u β d	
+ubs	u β s	
+ubz	u β z	
+uda	u ð a	
+udá	u ð á	
+udà	u ð à	
+udā	u ð ā	
+udi	u ð i	
+udí	u ð í	
+udì	u ð ì	
+udī	u ð ī	
+ude	u ð e	
+udē	u ð ē	
+udo	u ð o	
+udō	u ð ō	
+udu	u ð u	
+udū	u ð ū	
+udw	u ð w	
+udj	u ð j	
+udy	u ð y	
+udl	u ð l	
+udr	u ð r	
+udm	u ð m	
+udn	u ð n	
+udp	u ð p	
+udf	u ð f	
+udb	u ð b	
+udk	u ð k	
+udx	u ð x	
+udq	u ð q	
+udh	u ð h	
+udg	u ð g	
+udt	u ð t	
+udþ	u ð þ	
+uds	u ð s	
+udz	u ð z	
+uga	u ɣ a	
+ugá	u ɣ á	
+ugà	u ɣ à	
+ugā	u ɣ ā	
+ugi	u ɣ i	
+ugí	u ɣ í	
+ugì	u ɣ ì	
+ugī	u ɣ ī	
+uge	u ɣ e	
+ugē	u ɣ ē	
+ugo	u ɣ o	
+ugō	u ɣ ō	
+ugu	u ɣ u	
+ugū	u ɣ ū	
+ugw	u ɣ w	
+ugj	u ɣ j	
+ugy	u ɣ y	
+ugl	u ɣ l	
+ugr	u ɣ r	
+ugm	u ɣ m	
+ugn	u ɣ n	
+ugp	u ɣ p	
+ugf	u ɣ f	
+ugb	u ɣ b	
+ugk	u ɣ k	
+ugx	u ɣ x	
+ugq	u ɣ q	
+ugh	u ɣ h	
+ugg	u ɣ g	
+ugt	u ɣ t	
+ugþ	u ɣ þ	
+ugd	u ɣ d	
+ugs	u ɣ s	
+ugz	u ɣ z	
+ūba	ū β a	
+ūbá	ū β á	
+ūbà	ū β à	
+ūbā	ū β ā	
+ūbi	ū β i	
+ūbí	ū β í	
+ūbì	ū β ì	
+ūbī	ū β ī	
+ūbe	ū β e	
+ūbē	ū β ē	
+ūbo	ū β o	
+ūbō	ū β ō	
+ūbu	ū β u	
+ūbū	ū β ū	
+ūbw	ū β w	
+ūbj	ū β j	
+ūby	ū β y	
+ūbl	ū β l	
+ūbr	ū β r	
+ūbm	ū β m	
+ūbn	ū β n	
+ūbp	ū β p	
+ūbf	ū β f	
+ūbk	ū β k	
+ūbx	ū β x	
+ūbq	ū β q	
+ūbh	ū β h	
+ūbg	ū β g	
+ūbt	ū β t	
+ūbþ	ū β þ	
+ūbd	ū β d	
+ūbs	ū β s	
+ūbz	ū β z	
+ūda	ū ð a	
+ūdá	ū ð á	
+ūdà	ū ð à	
+ūdā	ū ð ā	
+ūdi	ū ð i	
+ūdí	ū ð í	
+ūdì	ū ð ì	
+ūdī	ū ð ī	
+ūde	ū ð e	
+ūdē	ū ð ē	
+ūdo	ū ð o	
+ūdō	ū ð ō	
+ūdu	ū ð u	
+ūdū	ū ð ū	
+ūdw	ū ð w	
+ūdj	ū ð j	
+ūdy	ū ð y	
+ūdl	ū ð l	
+ūdr	ū ð r	
+ūdm	ū ð m	
+ūdn	ū ð n	
+ūdp	ū ð p	
+ūdf	ū ð f	
+ūdb	ū ð b	
+ūdk	ū ð k	
+ūdx	ū ð x	
+ūdq	ū ð q	
+ūdh	ū ð h	
+ūdg	ū ð g	
+ūdt	ū ð t	
+ūdþ	ū ð þ	
+ūds	ū ð s	
+ūdz	ū ð z	
+ūga	ū ɣ a	
+ūgá	ū ɣ á	
+ūgà	ū ɣ à	
+ūgā	ū ɣ ā	
+ūgi	ū ɣ i	
+ūgí	ū ɣ í	
+ūgì	ū ɣ ì	
+ūgī	ū ɣ ī	
+ūge	ū ɣ e	
+ūgē	ū ɣ ē	
+ūgo	ū ɣ o	
+ūgō	ū ɣ ō	
+ūgu	ū ɣ u	
+ūgū	ū ɣ ū	
+ūgw	ū ɣ w	
+ūgj	ū ɣ j	
+ūgy	ū ɣ y	
+ūgl	ū ɣ l	
+ūgr	ū ɣ r	
+ūgm	ū ɣ m	
+ūgn	ū ɣ n	
+ūgp	ū ɣ p	
+ūgf	ū ɣ f	
+ūgb	ū ɣ b	
+ūgk	ū ɣ k	
+ūgx	ū ɣ x	
+ūgq	ū ɣ q	
+ūgh	ū ɣ h	
+ūgg	ū ɣ g	
+ūgt	ū ɣ t	
+ūgþ	ū ɣ þ	
+ūgd	ū ɣ d	
+ūgs	ū ɣ s	
+ūgz	ū ɣ z	
