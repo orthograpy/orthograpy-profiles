@@ -1,0 +1,28 @@
+Grapheme	IPA	Notes
+𐌰	a	cf. Braune p.21, https://en.wikipedia.org/wiki/Gothic_alphabet
+𐌱	b	
+𐌲	g	
+𐌳	d	
+𐌴	e	
+𐌵	q	
+𐌶	z	
+𐌷	h	
+𐌸	þ	
+𐌹	i	
+𐌺	k	
+𐌻	l	
+𐌼	m	
+𐌽	n	
+𐌾	j	
+𐌿	u	
+𐍀	p	
+𐍁	niuntehund	cf. https://en.wiktionary.org/wiki/%F0%90%8C%BD%F0%90%8C%B9%F0%90%8C%BF%F0%90%8C%BD%F0%90%8D%84%F0%90%8C%B4%F0%90%8C%B7%F0%90%8C%BF%F0%90%8C%BD%F0%90%8C%B3#Gothic
+𐍂	r	
+𐍃	s	
+𐍄	t	
+𐍅	w	
+𐍆	f	
+𐍇	x	
+𐍈	ƕ	
+𐍉	o	
+𐍊	niunhunda	cf. https://en.wiktionary.org/wiki/%F0%90%8C%BD%F0%90%8C%B9%F0%90%8C%BF%F0%90%8C%BD_%F0%90%8C%B7%F0%90%8C%BF%F0%90%8C%BD%F0%90%8C%B3%F0%90%8C%B0#Gothic
